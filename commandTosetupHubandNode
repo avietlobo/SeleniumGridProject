@@ -1,0 +1,17 @@
+Start Hub
+
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+
+
+Register node with Hub
+
+
+java -Dwebdriver.chrome.driver="C:\Users\YESU_ROWINA\eclipse-workspace\new\SeleniumGrid\drivers\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.111:4444/grid/register
+
+
+Register node with multiple drivers
+java -Dwebdriver.chrome.driver="C:\selenium\chromedriver.exe" -Dwebdriver.internetexplorer.driver="C:\selenium\IEDriverServer.exe" -Dwebdriver.gecko.driver="C:\selenium\geckodriver.exe" -jar "C:\selenium\selenium-server-standalone-3.5.0.jar" -role node -hub "http://<your_ip_here>:4444/grid/register/"
+
+
+website to refer about Selenium Grid
+https://www.codementor.io/@olawalealadeusi896/setting-up-selenium-grid-to-run-your-tests-in-parallel-on-multiple-browsers-kl6vqi83a
